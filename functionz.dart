@@ -30,7 +30,22 @@ String getUserAddress() {
 }
 
 void main() {
-  getUserName();
-  getUserAge();
-  getUserAddress();
+  // getUserName();
+  // getUserAge();
+  // getUserAddress();
+
+  List<String> bioData = [];
+  for (int i = 0; i <= 3;i++){
+   String name = getUserName();
+  bioData.add(name);
+  print(bioData);
+
+  String age = getUserAge();
+  bioData.add(age);
+  print(bioData);
+
+  String address = getUserAddress();
+  bioData.add(address);
+  print(bioData);
+}
 }
